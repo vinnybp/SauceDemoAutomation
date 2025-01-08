@@ -39,5 +39,46 @@ describe('Inventory SauceDemo Tests', () => {
 
     });
 
+    it('Sort Products in Ascending Order Test', () => {
+
+        // Login
+        cy.loginSuccess()
+
+        // Ordering Products in Ascending Order
+        cy.orderProductsAsc()
+
+        // Should verify if the products are in the ascending order
+        cy.verifyOrderProductsAsc()
+
+    });
+
+
+    it('Sort Products in Descending Order Test', () => {
+
+        // Login
+        cy.loginSuccess()
+
+        // Ordering Products in Descending Order
+        cy.orderProductsDesc()
+
+        // Should verify if the products are in the descending order
+        cy.verifyOrderProductsDesc()
+
+    });
+
+
+    it('Logout Test', () => {
+
+        // Login
+        cy.loginSuccess()
+
+        // Logout
+        cy.logout()
+
+        // Should verify if the user logout it with success
+        cy.isHomePage()
+
+    });
+
 
 });

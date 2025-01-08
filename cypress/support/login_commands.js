@@ -6,3 +6,7 @@ Cypress.Commands.add('loginSuccess', () => {
     cy.get('[data-test="password"]').type("secret_sauce")
     cy.get('#login-button').click()
 })
+
+Cypress.Commands.add('isHomePage',()=>{
+    cy.get('[data-test="username"]').should('be.visible')
+})

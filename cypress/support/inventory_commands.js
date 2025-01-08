@@ -47,3 +47,8 @@ Cypress.Commands.add('addItemToCartAndGoBack', () => {
     inventoryPage.clickAddToCartButton()
     iventoryItemPage.clickBackButton()
 })
+
+Cypress.Commands.add('logout', () => {
+    cy.get('.bm-burger-button > button').click()
+    cy.get('#logout_sidebar_link').click()
+})
