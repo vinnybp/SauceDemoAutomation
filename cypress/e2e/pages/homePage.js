@@ -1,6 +1,6 @@
 /// <reference types="Cypress"/>
 
-class homePage {
+class HomePage {
 
     elements = {
         usernameInput: () => cy.get('#user-name'),
@@ -27,4 +27,4 @@ class homePage {
 
 }
 
-module.exports = new homePage();
+module.exports = new HomePage();
