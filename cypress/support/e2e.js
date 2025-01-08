@@ -17,3 +17,4 @@
 import './commands'
 import './login_commands'
 import './inventory_commands'
+import './cart_commands'
