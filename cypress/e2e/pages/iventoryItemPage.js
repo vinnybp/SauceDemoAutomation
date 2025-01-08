@@ -1,6 +1,6 @@
 /// <reference types ="Cypress"/>
 
-class inventoryItemPage {
+class InventoryItemPage {
   elements = {
     backToIventoryButton: () => cy.get('.inventory_details_back_button'),
     clickToCartButton: () => cy.get('.shopping_cart_link')
@@ -18,4 +18,4 @@ class inventoryItemPage {
 }
 
 
-module.exports = new inventoryItemPage();
+module.exports = new InventoryItemPage();

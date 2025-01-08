@@ -9,7 +9,7 @@ describe('Inventory SauceDemo Tests', () => {
         cy.loginSuccess()
 
         // Should verify all products in inventory
-        cy.verifyIventoryProducts()
+        cy.verifyInventoryProducts()
 
     });
 

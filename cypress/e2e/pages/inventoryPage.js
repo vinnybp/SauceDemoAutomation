@@ -1,6 +1,6 @@
 /// <reference types ="Cypress"/>
 
-class inventoryPage {
+class InventoryPage {
   elements = {
     titleSpan: () => cy.get('.product_label'),
     addToCartButton: () => cy.get('.btn_primary')
@@ -13,4 +13,4 @@ class inventoryPage {
 
 }
 
-module.exports = new inventoryPage();
+module.exports = new InventoryPage();
